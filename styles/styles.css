@@ -1,23 +1,38 @@
 /* Base Rules */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "merriweather", serif;
+  font-family: "merriweather", serif;
+  line-height: 1.4;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1.25em;
 }
 
 header span {
-    text-transform: uppercase;
-    font-size: 1.1em;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+main {
+  margin: 0 1.5%;
+}
+
+main p {
+  text-align: center;
+  color: hsl(0, 0%, 50%);
 }
