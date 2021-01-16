@@ -13,26 +13,33 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  color: white;
-  padding: 1.25em;
+  border-bottom: black solid 4px;
 }
 
 header span {
+  align-self: stretch;
+  text-align: center;
   text-transform: uppercase;
+  color: white;
+  background-color: black;
   font-size: 1.1em;
+  padding: 1.25em;
 }
 
 h1 {
   font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+header p {
   text-align: center;
+  color: hsl(0, 0%, 50%);
+  margin-top: 5px;
+  margin-bottom: 37px;
 }
 
 main {
   margin: 0 1.5%;
 }
 
-main p {
-  text-align: center;
-  color: hsl(0, 0%, 50%);
-}
