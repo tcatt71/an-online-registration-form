@@ -7,6 +7,7 @@
 body {
   font-family: "merriweather", serif;
   line-height: 1.4;
+  font-size: .875rem;
 }
 
 header {
@@ -20,24 +21,29 @@ header {
 
 header span {
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding: 1.25em;
-}
-
-h1 {
-  font-size: 1.2rem;
-  margin-top: 25px;
-  margin-bottom: 5px;
-}
-
-header p {
-  text-align: center;
-  color: hsl(0, 0%, 50%);
-  margin-top: 5px;
-  margin-bottom: 37px;
 }
 
 main {
   margin: 0 1.5%;
 }
+
+.intro {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: black solid 4px;
+}
+
+h1 {
+  font-size: 1.14rem;
+  margin: 10px 0;
+}
+
+.intro p {
+  color: hsl(0, 0%, 50%);
+  margin: 10px 0;
+}
+
+
 
