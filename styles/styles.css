@@ -54,3 +54,8 @@ fieldset {
   border: none;
   margin: 25px 0;
 }
+
+legend {
+  font-size: 1.14rem;
+  font-weight: bold;
+}
