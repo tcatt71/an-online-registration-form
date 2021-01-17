@@ -49,3 +49,8 @@ form {
   margin-top: 3px;
   border-top: black solid 2px;
 }
+
+fieldset {
+  border: none;
+  margin: 25px 0;
+}
