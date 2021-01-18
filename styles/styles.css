@@ -85,9 +85,9 @@ select {
 }
 
 input::placeholder {
-  text-align: right;
   font-style: italic;
-  font-size: 12px;
+  text-align: right;
+  font-size: .7rem;
 }
 
 select:invalid {
