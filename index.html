@@ -25,10 +25,10 @@
         <legend>Contact Information</legend>
 
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user-full-name" placeholder="Required" required>
+        <input type="text" id="name" name="user-full-name" placeholder="Required " required>
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="user-email" placeholder="Required" required>
+        <input type="email" id="email" name="user-email" placeholder="Required " required>
 
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="user-phone-number">
@@ -40,7 +40,8 @@
         <input type="text" id="city" name="user-city">
 
         <label for="state">State</label>
-        <select name="user-state" id="state">
+        <select name="user-state" id="state" required>
+          <option value="">Choose State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -94,10 +95,10 @@
         </select>
 
         <label for="zip-code">Zip Code</label>
-        <input type="text" id="zip-code" name="user-zip-code">
+        <input class="zip-code" type="text" id="zip-code" name="user-zip-code">
       </fieldset>
 
-      <fieldset>
+      <fieldse class="newsletter-options">
         <legend>Newsletter</legend>
 
         <p>Select the newsletters you would like to recieve</p>
@@ -118,7 +119,7 @@
         <label for="text">Plain text</label><br>
 
         <label for="other-topics">Other topics you'd like to hear about</label>
-        <textarea name="other-topics" id="other-topics" cols="20" rows="10"></textarea>
+        <textarea name="other-topics" id="other-topics" rows="6"></textarea>
       </fieldset>
 
       <button type="submit">Sign Up</button>

@@ -60,3 +60,57 @@ legend {
   font-size: 1.14rem;
   font-weight: bold;
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0 2.2em 0;
+  border-bottom: black solid 2px;
+}
+
+label {
+  display: inline-block;
+  padding: 1em 0;
+}
+
+input,
+select,
+textarea {
+  border: none;
+}
+
+input,
+select {
+  padding: 1.1em;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
+}
+
+select:invalid {
+  color: grey;
+}
+
+option {
+  color: black;
+}
+
+.zip-code {
+  width: 50%;
+}
+
+.newsletter-options label{
+  padding-top: 0;
+}
+
+label[for="other-topics"] {
+  padding-top: 1em;
+}
+
+textarea {
+  width: 100%;
+}
