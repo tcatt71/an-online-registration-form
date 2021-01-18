@@ -113,4 +113,16 @@ label[for="other-topics"] {
 
 textarea {
   width: 100%;
+  border: black solid 1px;
+}
+
+button {
+  color: white;
+  font-size: 1.15rem;
+  background-color: hsl(175, 50%, 50%);
+  width: 100%;
+  padding: 1.15em;
+  border-style: none;
+  border-radius: 5px;
+  margin: 1.85em 0;
 }
