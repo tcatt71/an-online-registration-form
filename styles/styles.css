@@ -125,6 +125,10 @@ button {
   margin: 1.85em 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   justify-content: center;
