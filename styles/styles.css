@@ -142,3 +142,9 @@ footer {
   color: hsl(0, 0%, 50%);
   font-style: italic;
 }
+
+@media (min-width: 768px) {
+  main {
+    margin: 0 auto;
+  }
+}
