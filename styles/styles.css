@@ -25,6 +25,7 @@ header span {
 }
 
 main {
+  max-width: 675px;
   margin: 0 5%;
 }
 
