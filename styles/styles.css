@@ -127,6 +127,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: hsl(120, 50%, 50%);
 }
 
 footer {
