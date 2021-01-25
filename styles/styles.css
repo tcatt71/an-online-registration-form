@@ -80,6 +80,12 @@ textarea {
   border: none;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: hsl(240, 50%, 50%);
+}
+
 input,
 select {
   padding: 1.1em;
