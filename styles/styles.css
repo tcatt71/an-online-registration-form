@@ -150,4 +150,25 @@ footer {
   main {
     margin: 0 auto;
   }
+
+  .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact-info label,
+  .contact-info .zip-code {
+    width: 25%;
+  }
+  .contact-info input,
+  select {
+    width: 75%;
+  }
+
+  .contact-info label,
+  .contact-info input,
+  select,
+  legend {
+    margin: 11px 0;
+  }
 }
