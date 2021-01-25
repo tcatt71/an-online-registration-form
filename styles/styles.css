@@ -103,7 +103,7 @@ option {
   width: 50%;
 }
 
-.newsletter-options label{
+.newsletter-options label:not(.other-topics){
   padding-top: 0;
   margin-left: .75em;
 }
