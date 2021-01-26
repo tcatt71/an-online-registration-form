@@ -87,7 +87,8 @@ textarea:focus {
 }
 
 input,
-select {
+select,
+textarea {
   padding: 1.1em;
 }
 
