@@ -168,8 +168,7 @@ footer {
 
   .contact-info label,
   .contact-info input,
-  select,
-  legend {
+  select {
     margin: 11px 0;
   }
 }
