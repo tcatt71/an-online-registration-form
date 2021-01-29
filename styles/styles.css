@@ -111,6 +111,19 @@ option {
   width: 50%;
 }
 
+.newsletter-options p {
+  line-height: 1.8;
+}
+
+.newsletter-options,
+.newsletter-options legend {
+  background-color: lightgrey;
+}
+
+.newsletter-options legend {
+  padding-bottom: 0;
+}
+
 .newsletter-options label:not(.other-topics){
   padding-top: 0;
   margin-left: .75em;
