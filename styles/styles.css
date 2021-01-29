@@ -153,6 +153,10 @@ footer {
     margin: 0 auto;
   }
 
+  legend {
+    padding-top: 2.5em;
+  }
+
   .contact-info {
     flex-direction: row;
     flex-wrap: wrap;
