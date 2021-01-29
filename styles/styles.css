@@ -150,8 +150,12 @@ header span {
   padding: 1.25em;
 }
 
-.intro p {
+.intro p,
+.copyright {
   color: hsl(0, 0%, 50%);
+}
+
+.intro p {
   margin: 10px 0;
 }
 
@@ -173,7 +177,6 @@ header span {
 }
 
 .copyright {
-  color: hsl(0, 0%, 50%);
   font-style: italic;
 }
 
