@@ -79,6 +79,7 @@ input,
 select,
 textarea {
   border: none;
+  outline-color: transparent;
 }
 
 input:focus,
