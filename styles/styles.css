@@ -176,4 +176,8 @@ footer {
   select {
     margin: 11px 0;
   }
+
+  .newsletter-options legend {
+    padding-bottom: .5em;
+  }
 }
