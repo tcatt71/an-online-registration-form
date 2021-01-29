@@ -1,4 +1,6 @@
-/* Base Rules */
+/*************************
+Base Styles
+*************************/
 
 * {
   box-sizing: border-box;
@@ -10,64 +12,30 @@ body {
   font-size: .875rem;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-
-  background-color: black;
-  color: white;
-}
-
-header span {
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 1.25em;
-}
-
-main {
-  max-width: 675px;
-  margin: 0 5%;
-}
-
-.intro {
-  text-align: center;
-  padding: 1em 0;
-  border-bottom: black solid 4px;
-}
-
-h1 {
-  font-size: 1.14rem;
-  margin: 10px 0;
-}
-
-.intro p {
-  color: hsl(0, 0%, 50%);
-  margin: 10px 0;
-}
-
 form {
   margin-top: 3px;
   border-top: black solid 2px;
 }
 
-fieldset {
-  border: none;
-  padding: 0;
+h1,
+legend {
+  font-size: 1.14rem;
+  margin: 10px 0;
+}
+
+legend,
+textarea,
+button {
+  width: 100%;
 }
 
 legend {
-  width: 100%;
-  font-size: 1.14rem;
   font-weight: bold;
   padding: 1.3em 0 .5em;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-
-  padding: 0 0 2.2em 0;
-  border-bottom: black solid 2px;
+fieldset {
+  padding: 0;
 }
 
 label {
@@ -75,11 +43,18 @@ label {
   padding: 1.1em 0;
 }
 
+fieldset,
 input,
 select,
 textarea {
   border: none;
+}
+
+input,
+select,
+textarea {
   outline-color: transparent;
+  padding: 1.1em;
 }
 
 input:focus,
@@ -87,12 +62,6 @@ select:focus,
 textarea:focus {
   outline-color: hsl(180, 50%, 50%);
   transition: outline-color .4s ease-in;
-}
-
-input,
-select,
-textarea {
-  padding: 1.1em;
 }
 
 input::placeholder {
@@ -109,37 +78,10 @@ option {
   color: black;
 }
 
-.zip-code {
-  width: 50%;
-}
-
-.newsletter-options p {
-  line-height: 1.8;
-}
-
-.newsletter-options,
-.newsletter-options legend {
-  background-color: lightgrey;
-}
-
-.newsletter-options legend {
-  padding-bottom: 0;
-}
-
-.newsletter-options label:not(.other-topics){
-  padding-top: 0;
-  margin-left: .75em;
-}
-
-textarea {
-  width: 100%;
-}
-
 button {
   color: white;
   font-size: 1.15rem;
   background-color: hsl(180, 50%, 50%);
-  width: 100%;
   padding: 1.15em;
   border-style: none;
   border-radius: 5px;
@@ -151,11 +93,83 @@ button:hover {
   background-color: hsl(120, 50%, 50%);
 }
 
+/*************************
+Layout Styles
+*************************/
+
+header,
+.contact-info,
 footer {
   display: flex;
+}
+
+header,
+footer {
   justify-content: center;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+main {
+  max-width: 675px;
+  margin: 0 5%;
+}
+
+.intro {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: black solid 4px;
+}
+
+.contact-info {
+  flex-direction: column;
+  padding: 0 0 2.2em 0;
+  border-bottom: black solid 2px;
+}
+
+.newsletter-options,
+.newsletter-options legend {
+  background-color: lightgrey;
+}
+
+footer {
   font-size: .825rem;
   height: 6em;
+}
+
+/*************************
+Module Styles
+*************************/
+
+header span {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.25em;
+}
+
+.intro p {
+  color: hsl(0, 0%, 50%);
+  margin: 10px 0;
+}
+
+.zip-code {
+  width: 50%;
+}
+
+.newsletter-options p {
+  line-height: 1.8;
+}
+
+.newsletter-options legend {
+  padding-bottom: 0;
+}
+
+.newsletter-options label:not(.other-topics){
+  padding-top: 0;
+  margin-left: .75em;
 }
 
 .copyright {
@@ -163,13 +177,17 @@ footer {
   font-style: italic;
 }
 
-@media (min-width: 768px) {
-  main {
-    margin: 0 auto;
-  }
+/*************************
+Media Queries
+*************************/
 
+@media (min-width: 768px) {
   legend {
     padding-top: 2.5em;
+  }
+
+  main {
+    margin: 0 auto;
   }
 
   .contact-info {
