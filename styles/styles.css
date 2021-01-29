@@ -85,7 +85,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline-color: hsl(240, 50%, 50%);
+  outline-color: hsl(180, 50%, 50%);
+  transition: outline-color .4s ease-in;
 }
 
 input,
