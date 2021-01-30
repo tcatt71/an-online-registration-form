@@ -12,15 +12,63 @@ body {
   font-size: .875rem;
 }
 
-form {
-  margin-top: 3px;
-  border-top: black solid 2px;
+/* -------------------Header---------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+header span {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.25em;
+}
+
+/* -------------------Main------------------ */
+
+main {
+  max-width: 675px;
+  margin: 0 5%;
 }
 
 h1,
 legend {
   font-size: 1.14rem;
   margin: 10px 0;
+}
+
+/* -------------------Intro------------------ */
+
+.intro {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: black solid 4px;
+}
+
+.intro p {
+  color: hsl(0, 0%, 50%);
+  margin: 10px 0;
+}
+
+/* -------------------Form------------------- */
+
+form {
+  margin-top: 3px;
+  border-top: black solid 2px;
+}
+
+fieldset {
+  padding: 0;
+}
+
+fieldset,
+input,
+select,
+textarea {
+  border: none;
 }
 
 legend,
@@ -34,20 +82,9 @@ legend {
   padding: 1.3em 0 .5em;
 }
 
-fieldset {
-  padding: 0;
-}
-
 label {
   display: inline-block;
   padding: 1.1em 0;
-}
-
-fieldset,
-input,
-select,
-textarea {
-  border: none;
 }
 
 input,
@@ -70,12 +107,45 @@ input::placeholder {
   font-size: .7rem;
 }
 
+/* -------------------Contact info----------- */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 2.2em 0;
+  border-bottom: black solid 2px;
+}
+
 select:invalid {
   color: grey;
 }
 
 option {
   color: black;
+}
+
+.zip-code {
+  width: 50%;
+}
+
+/* -------------------Newsletter options----- */
+
+.newsletter-options {
+  background-color: lightgrey;
+}
+
+.newsletter-options p {
+  line-height: 1.8;
+}
+
+.newsletter-options legend {
+  background-color: lightgrey;
+  padding-bottom: 0;
+}
+
+.newsletter-options label:not(.other-topics){
+  padding-top: 0;
+  margin-left: .75em;
 }
 
 button {
@@ -93,90 +163,17 @@ button:hover {
   background-color: hsl(120, 50%, 50%);
 }
 
-/*************************
-Layout Styles
-*************************/
+/* -------------------Footer----------------- */
 
-header,
-.contact-info,
 footer {
   display: flex;
-}
-
-header,
-footer {
   justify-content: center;
-}
-
-header {
-  background-color: black;
-  color: white;
-}
-
-main {
-  max-width: 675px;
-  margin: 0 5%;
-}
-
-.intro {
-  text-align: center;
-  padding: 1em 0;
-  border-bottom: black solid 4px;
-}
-
-.contact-info {
-  flex-direction: column;
-  padding: 0 0 2.2em 0;
-  border-bottom: black solid 2px;
-}
-
-.newsletter-options,
-.newsletter-options legend {
-  background-color: lightgrey;
-}
-
-footer {
   font-size: .825rem;
   height: 6em;
 }
 
-/*************************
-Module Styles
-*************************/
-
-header span {
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 1.25em;
-}
-
-.intro p,
 .copyright {
   color: hsl(0, 0%, 50%);
-}
-
-.intro p {
-  margin: 10px 0;
-}
-
-.zip-code {
-  width: 50%;
-}
-
-.newsletter-options p {
-  line-height: 1.8;
-}
-
-.newsletter-options legend {
-  padding-bottom: 0;
-}
-
-.newsletter-options label:not(.other-topics){
-  padding-top: 0;
-  margin-left: .75em;
-}
-
-.copyright {
   font-style: italic;
 }
 
@@ -185,12 +182,12 @@ Media Queries
 *************************/
 
 @media (min-width: 768px) {
-  legend {
-    padding-top: 2.5em;
-  }
-
   main {
     margin: 0 auto;
+  }
+
+  legend {
+    padding-top: 2.5em;
   }
 
   .contact-info {
