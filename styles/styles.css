@@ -90,6 +90,7 @@ label {
 input,
 select,
 textarea {
+  background-color: hsl(60, 100%, 90%);
   outline-color: transparent;
   padding: 1.1em;
 }
