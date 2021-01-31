@@ -132,7 +132,8 @@ option {
 
 /* -------------------Newsletter options----- */
 
-.newsletter-options {
+.newsletter-options,
+.newsletter-options legend {
   background-color: lightgrey;
 }
 
@@ -141,7 +142,6 @@ option {
 }
 
 .newsletter-options legend {
-  background-color: lightgrey;
   padding-bottom: 0;
 }
 
