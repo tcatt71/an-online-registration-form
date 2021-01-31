@@ -123,6 +123,7 @@ select:invalid {
 
 option {
   color: black;
+  background-color: white;
 }
 
 .zip-code {
